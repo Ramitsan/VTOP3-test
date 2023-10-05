@@ -1,3 +1,14 @@
 .chips {
-  border: 1px solid blue;
+  width: 20%;
+}
+
+.chips__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chips__line {
+  margin: 0 10px;
 }
