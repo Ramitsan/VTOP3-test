@@ -1,0 +1,24 @@
+.promo {
+  width: 40%;
+  border: 1px solid red;
+}
+
+.promo__wrapper {
+  width: 669px;
+}
+
+.promo__heading {
+  text-transform: uppercase;
+}
+
+.promo__heading span {
+  color: $main-color;
+}
+
+.promo__text {
+  color: lightgrey;
+}
+
+.promo__link {
+  border-radius: 20px;
+}
