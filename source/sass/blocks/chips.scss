@@ -1,14 +1,26 @@
-.chips {
-  width: 20%;
-}
-
 .chips__wrapper {
+  height: 80vh;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .chips__line {
-  margin: 0 10px;
+  margin: 0 5px;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.chips__line--one {
+  opacity: 20%;
+}
+
+.chips__line--two {
+  opacity: 60%;
+}
+
+.chips__line--three {
+  opacity: 40%;
 }
