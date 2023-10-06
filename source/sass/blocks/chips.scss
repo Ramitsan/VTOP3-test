@@ -3,24 +3,49 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   overflow: hidden;
 }
 
 .chips__line {
   margin: 0 5px;
   overflow: hidden;
-  overflow-y: auto;
+  overflow-y: auto;  
 }
 
 .chips__line--one {
   opacity: 20%;
+  align-self: flex-end;
+  animation: chips-move-down linear infinite 3s;
 }
 
 .chips__line--two {
   opacity: 60%;
+  animation: chips-move-up linear infinite 3s;
 }
 
 .chips__line--three {
   opacity: 40%;
+  align-self: flex-end;
+  animation: chips-move-down linear infinite 3s;
+}
+
+@keyframes chips-move-down {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(calc(100% / 3));
+  }
+}
+
+@keyframes chips-move-up {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(calc(-100% / 3));
+  }
 }
