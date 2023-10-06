@@ -1,3 +1,58 @@
-.blog {
-  border: 1px solid green;
+.blog__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.blog__heading {
+  text-transform: uppercase;
+}
+
+.blog__news-container {
+  width: 531px;
+  height: 595px;
+  overflow: hidden;  
+  border: 3px solid $main-color;
+  border-radius: 100px; 
+  background-color: rgba(255, 255, 255, .12);
+}
+
+.blog__news-list {
+  width: 100%;
+  height: 595px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 0;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+
+/* Работает в Chrome, Opera и Safari */
+.blog__news-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.blog__news-list::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, .12);
+  border-radius: 10px;
+  width: 8px;
+  height: 403px;
+}
+
+.blog__news-list::-webkit-scrollbar-thumb {
+  width: 8px;
+  height: 104px;
+  background: $main-color;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* Работает в Firefox */
+.blog__news-list {
+  scrollbar-width: thin;
+  scrollbar-color: $main-color rgba(255, 255, 255, .12);
 }

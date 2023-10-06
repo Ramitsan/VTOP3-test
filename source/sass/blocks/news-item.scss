@@ -1,0 +1,24 @@
+.news-item {
+  width: 467px;
+  height: 146px;
+  list-style: none;
+  padding: 16px 64px;
+  margin-bottom: 10px;
+  background-color: $second-color;
+  border-radius: 75px;
+}
+
+.news-item__text {
+  margin: 0;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.news-item__date {
+  font-family: $second-font;
+  font-size: 14px;
+  line-height: 16px;
+  font-style: normal;
+  font-weight: 500;
+  color: rgba(255, 255, 255, .6);
+}
