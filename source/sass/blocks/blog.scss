@@ -18,8 +18,12 @@
   background-color: rgba(255, 255, 255, .12);
 }
 
-.blog__news-list {
+.blog__scroll-wrapper {
   width: 100%;
+}
+
+.blog__news-list {
+  width: 97%;
   height: 595px;
   margin: 0;
   display: flex;
@@ -29,19 +33,22 @@
   padding-left: 0;
   overflow: hidden;
   overflow-y: auto;
+  margin-right: 20px;
 }
 
 
 /* Работает в Chrome, Opera и Safari */
 .blog__news-list::-webkit-scrollbar {
   width: 8px;
+  margin-right: 20px;
 }
 
 .blog__news-list::-webkit-scrollbar-track {
   background: rgba(255, 255, 255, .12);
   border-radius: 10px;
   width: 8px;
-  height: 403px;
+  height: 300px;
+  margin: 90px;
 }
 
 .blog__news-list::-webkit-scrollbar-thumb {
@@ -49,7 +56,6 @@
   height: 104px;
   background: $main-color;
   border-radius: 10px;
-  cursor: pointer;
 }
 
 /* Работает в Firefox */
