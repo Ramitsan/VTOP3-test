@@ -5,10 +5,34 @@
   color: $main-text-color;
   outline: none;
   cursor: pointer;
-  // &:hover {
-  //   background: $orange-hover;
-  // }
-  // &:active {
-  //   background: $green;
-  // }
+}
+
+@mixin nav-link () {
+  display: inline-block;
+  position: relative;
+  color: $main-text-color;
+  cursor: pointer;
+  &:hover {
+    color: $main-color;
+    transition: 200ms;
+  }  
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: $main-color;
+    transform: scaleX(0);
+    transition: all 0.5s;
+  } 
+  &:hover{
+    &:before{
+      transform: scaleX(1);
+    }
+  }
+  &:active {
+    opacity: 0.5;
+  } 
 }
