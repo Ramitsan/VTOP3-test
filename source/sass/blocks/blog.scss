@@ -6,6 +6,10 @@
 }
 
 .blog__heading {
+  margin: 10px 0 20px;
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 600;
   text-transform: uppercase;
 }
 
@@ -26,6 +30,7 @@
   width: 97%;
   height: 595px;
   margin: 0;
+  padding-top: 18px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
