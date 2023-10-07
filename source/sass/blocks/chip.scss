@@ -9,6 +9,24 @@
   background-size: contain;
 }
 
+.chip--long {
+  height: 220px;
+  border: 3px solid $main-color;
+  border-radius: 50px;
+}
+
+.chip--bottom {
+  background-position: bottom -3px center;
+}
+
+.chip--top {
+  background-position: top -3px center;
+}
+
+.chip--crown.chip--long {
+  border: 3px solid white;
+}
+
 .chip--shield {
   background-image: url('../../assets/icons/chip-shield.svg');
 }
