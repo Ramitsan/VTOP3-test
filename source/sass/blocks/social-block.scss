@@ -1,0 +1,90 @@
+.social-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.social-list {
+  display: flex;
+  padding-left: 0px;
+}
+
+.social-item {
+  list-style: none;
+  
+}
+
+.social-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.social-link {
+  width: 32px;
+  height: 32px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.social-link:hover .social-background--hover {
+  opacity: 100;
+}
+
+.social-background {  
+  width: 100%;
+  height: 100%;
+  background-image: url('../../assets/icons/vector.svg');
+  background-size: contain;
+}
+
+.social-background--hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url('../../assets/icons/vector2.svg');
+  opacity: 0;
+  transition: 200ms;
+}
+
+.social-icon {
+  position: absolute;  
+  width: 100%;
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.social-icon--twitter {
+  background-image: url('../../assets/icons/icon-twitter.svg');
+}
+
+.social-icon--facebook {
+  background-image: url('../../assets/icons/icon-facebook.svg');
+}
+
+.social-icon--instagram {
+  background-image: url('../../assets/icons/icon-instagram.svg');
+}
+
+.social-icon--linkedin {
+  background-image: url('../../assets/icons/icon-linkedin.svg');
+}
+
+.social-icon--youtube {
+  background-image: url('../../assets/icons/icon-youtube.svg');
+}
+
+.social-icon--tiktok {
+  background-image: url('../../assets/icons/icon-tiktok.svg');
+}
+
+.social-icon--telegram {
+  background-image: url('../../assets/icons/icon-telegram.svg');
+}
+
+.social-icon--vk {
+  background-image: url('../../assets/icons/icon-vk.svg');
+}
