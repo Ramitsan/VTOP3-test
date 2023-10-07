@@ -1,0 +1,42 @@
+.widgets {
+  display: flex;
+  align-items: center;
+}
+
+.widgets__language-button {
+  margin-right: 14px;
+  padding: 14px 14px 14px 38px;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $main-text-color;
+  border: 2px solid #9DADF2;
+  border-radius: 20px;
+  background-color: transparent;
+  background-image: url('../../assets/icons/icon-planet.svg');
+  background-size: 16px 16px;
+  background-position: left 10px center;
+  background-repeat: no-repeat;
+}
+
+.widgets__link {
+  display: inline-block;
+  padding: 14px;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $main-text-color;
+  border: 2px solid #9DADF2;
+  border-radius: 20px;
+  transition: 200ms;
+}
+
+.widgets__link:not(:last-child) {
+  margin-right: 14px;
+}
+
+.widgets__link:hover {
+ background-color: $main-color;
+ border: 2px solid $main-color;
+ transition: 200ms;
+}
