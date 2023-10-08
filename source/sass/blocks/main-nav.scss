@@ -31,26 +31,20 @@
 
 @media (max-width: $tablet-width) {
   .nav {
-    position: absolute;
-    z-index: 1000;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 640px;
-    margin: 0px;
-    padding-left: 0;
-    background-color: #110A1D;
-  }
-
-  .nav--closed {
     position: fixed;
     top: 130px;
     right: -500px;
+    width: 100%;
+    height: 640px;
+    margin: 0px;
+    padding-left: 0;      
+    background-color: #110A1D;    
     transform: translateX(100%);
     transition: all .7s ease-out;
+    z-index: 1000;
   }
 
-  .nav--opened {
+ #burger:checked ~ .nav {
     position: fixed;
     top: 130px;
     right: 0;
