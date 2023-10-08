@@ -1,5 +1,8 @@
 .widgets {
+  width: 300px;
+  padding-left: 100px;
   display: flex;
+  justify-content: flex-end;
   align-items: center;
 }
 
@@ -17,7 +20,7 @@
 }
 
 .widgets__link:not(:last-child) {
-  margin-right: 12px;
+  margin-right: 15px;
 }
 
 .widgets__link:hover {
@@ -26,9 +29,38 @@
  transition: 200ms;
 }
 
+@media (max-width: $small-desktop-width) {
+  .widgets {
+    width: 280px;
+    padding-left: 80px;
+  }  
+
+  .widgets__link {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .widgets__link:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
 @media (max-width: $tablet-width) {
   .widgets {
+    width: 100%;
     flex-direction: column;
+    padding-left: 0;
+  }
+
+  .widgets__link {
+    width: 95%;
+    margin: 0 auto 5px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .widgets__link:not(:last-child) {
+    margin: 0 auto 5px;
   }
 }
 

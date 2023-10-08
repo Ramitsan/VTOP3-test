@@ -21,6 +21,21 @@
   @include nav-link();
 }
 
+@media (max-width: $small-desktop-width) {
+  .main-nav {
+    padding-left: 25px;
+  }
+
+  .main-nav__item {
+    margin-right: 14px;
+  }  
+
+  .main-nav__link {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
 @media (max-width: $tablet-width) {
   .nav {
     position: fixed;
@@ -75,5 +90,7 @@
     display: block;
     color: $main-text-color;
     padding-bottom: 0;
+    font-size: 18px;
+    line-height: 24px;
   }
 }
