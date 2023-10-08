@@ -41,3 +41,9 @@
     width: 65%;
   }
 }
+
+@media (max-width: $tablet-width) {
+  .main__wrapper {
+    padding-top: 75px;
+  }  
+}

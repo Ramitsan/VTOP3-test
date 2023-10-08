@@ -10,16 +10,20 @@
 <body>
   <header class="header">
     <div class="header__wrapper">
+      <input type="checkbox" class="header__checkbox" id="burger">
+      <label class="header__overlay" for="burger"></label>
+      
       <a class="header__logo" href="#">
         <picture>
           <source media="(max-width: 999px)" srcset="assets/img/logo-mobile.png">
           <img src="assets/img/logo.png" alt="House of gambling logo">
         </picture>
       </a>
-      <input type="checkbox" class="header__checkbox" id="burger">
+      
       <label class="btn header__burger-toggle" for="burger">
         <span class="visually-hidden">Открыть меню</span>
       </label>
+     
 
       <div class="header__menu-wrapper nav">
         <nav class="header__nav main-nav">      

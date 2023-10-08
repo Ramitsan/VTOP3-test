@@ -70,6 +70,10 @@
   content: "RU";
 }
 
+.header__overlay {
+  display: none;
+}
+
 @media (max-width: $small-desktop-width) {
   .header__wrapper {
     width: 96%;
@@ -94,6 +98,11 @@
 }
 
 @media (max-width: $tablet-width) {
+  .header {
+    position: fixed;
+    z-index: 1000;
+  }
+
   .header__wrapper {
     padding: 5px 10px;
   }
@@ -126,11 +135,15 @@
     z-index: 3000;
   }
 
+  #burger:checked ~ .header__burger-toggle {
+    background-image: url("../../assets/icons/burger-close.svg");
+    background-size: 16px 16px;
+  }
+
   .header__menu-wrapper {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    border: 1px solid red;
   }
 
   .header__language-button {
@@ -142,6 +155,17 @@
     background-size: 20px 20px;
     background-position: center;
     border-radius: 50%;
+  }
+
+  #burger:checked ~ .header__overlay {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0009;
+    z-index: -1;
   }
 }
 

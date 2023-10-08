@@ -39,12 +39,13 @@
 @media (max-width: $tablet-width) {
   .nav {
     position: fixed;
-    top: 80px;
+    top: 74px;
     right: -500px;
     width: 100%;
     height: 640px;
     margin: 0px;
-    padding-left: 0;      
+    padding-left: 0;   
+    padding-top: 20px;   
     background-color: #110A1D;    
     transform: translateX(100%);
     transition: all .7s ease-out;
@@ -53,7 +54,7 @@
 
  #burger:checked ~ .nav {
     position: fixed;
-    top: 80px;
+    top: 74px;
     right: 0;
     transform: translateX(0%);
     transition: all .7s ease-out;
