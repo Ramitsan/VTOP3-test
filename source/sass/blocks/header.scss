@@ -55,6 +55,19 @@
   background-position: left 10px center;
   background-repeat: no-repeat;
   z-index: 1000;
+  cursor: pointer;
+}
+
+#language {
+  display: none;
+}
+
+.header__language-button::before {
+  content: "EN";
+}
+
+#language:checked ~ .header__language-button::before {
+  content: "RU";
 }
 
 @media (max-width: $small-desktop-width) {
