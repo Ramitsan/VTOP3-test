@@ -25,3 +25,33 @@
  width: 287px;
  height: 32px;
 }
+
+.header__menu-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;  
+}
+
+@media (max-width: $tablet-width) {
+  .header__wrapper {
+    padding: 5px 10px;
+  }
+
+  .header__logo {
+    width: 54px;
+    height: 18px;
+  }
+  
+  .header__logo img {
+   width: 54px;
+   height: 18px;
+  }
+
+  .header__menu-wrapper {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid red;
+  }
+}

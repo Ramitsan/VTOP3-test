@@ -4,6 +4,7 @@
 }
 
 .widgets__language-button {
+  position: relative;
   margin-right: 12px;
   padding: 12px 14px 12px 38px;
   font-size: 16px;
@@ -17,6 +18,7 @@
   background-size: 16px 16px;
   background-position: left 10px center;
   background-repeat: no-repeat;
+  z-index: 1000;
 }
 
 .widgets__link {
@@ -40,3 +42,17 @@
  border: 2px solid $main-color;
  transition: 200ms;
 }
+
+@media (max-width: $tablet-width) {
+  .widgets {
+    flex-direction: column;
+  }
+
+  .widgets__language-button {
+    top: -2px;
+    right: 35px;
+  }
+}
+
+
+   

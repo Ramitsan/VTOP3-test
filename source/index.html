@@ -12,49 +12,55 @@
     <div class="header__wrapper">
       <a class="header__logo" href="#">
         <picture>
-          <!-- <source media="(max-width: 999px)" srcset="assets/img/logo_footer_tablet.png"> -->
+          <source media="(max-width: 999px)" srcset="assets/img/logo-mobile.png">
           <img src="assets/img/logo.png" alt="House of gambling logo">
         </picture>
       </a>
+      <!-- <input type="checkbox" class="checkbox" id="burger">
+      <label class="btn main-nav__toggle" type="button" for="burger">
+        <span class="visually-hidden">Открыть меню</span>
+      </label> -->
 
       <button class="btn main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
 
-      <nav class="header__nav main-nav main-nav--closed">      
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--active" href="#">About us</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Brands</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Commissions</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">News</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Contact us</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Careers</a>
-            </li>           
-          </ul>
-        </div>
-      </nav>
+      <div class="header__menu-wrapper nav nav--closed">
+        <nav class="header__nav main-nav">      
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a class="main-nav__link main-nav__link--active" href="#">About us</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">Brands</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">Commissions</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">News</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">Contact us</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">Careers</a>
+              </li>           
+            </ul>
+          </div>
+        </nav>
 
-      <div class="header__widgets widgets">
-        <button type="button" value="en" class="btn widgets__language-button">EN</button>
-        <a href="#" class="widgets__link widgets__link--login">log in</a>
-        <a href="#" class="widgets__link widgets__link--signup">sign up</a>
-      </div>
+        <div class="header__widgets widgets">         
+          <a href="#" class="widgets__link widgets__link--login">log in</a>
+          <a href="#" class="widgets__link widgets__link--signup">sign up</a>
+        </div>
+      </div>  
+      <button type="button" value="en" class="btn widgets__language-button">EN</button>   
     </div>
    
   </header>
-  <main class="main">
+  <!-- <main class="main">
     <div class="main__wrapper">
       <section class="main__promo promo">
         <div class="promo__wrapper">
@@ -228,6 +234,7 @@
       </div> 
     </div>
  
-  </footer>  
+  </footer>  -->
+  <script type="module" src="js/burger-menu.js"></script> 
 </body>
 </html>

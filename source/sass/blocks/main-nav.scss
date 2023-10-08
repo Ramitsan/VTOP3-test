@@ -25,5 +25,100 @@
   @include nav-link();
 }
 
+.checkbox {
+  display: none;
+}
+
+@media (max-width: $tablet-width) {
+  .nav {
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 640px;
+    margin: 0px;
+    padding-left: 0;
+    background-color: #110A1D;
+  }
+
+  .nav--closed {
+    position: fixed;
+    top: 130px;
+    right: -500px;
+    transform: translateX(100%);
+    transition: all .7s ease-out;
+  }
+
+  .nav--opened {
+    position: fixed;
+    top: 130px;
+    right: 0;
+    transform: translateX(0%);
+    transition: all .7s ease-out;
+  }
+
+  .main-nav {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .main-nav__wrapper {
+    width: 100%;
+   }
+
+  .main-nav__toggle {
+    position: absolute;
+    background-color: transparent;
+    width: 28px;
+    height: 28px;
+    top: 30px;
+    right: 30px;
+    z-index: 3000;
+    display: block;
+    cursor: pointer;
+    padding: 0;
+    outline: none;
+    background-image: url("../../assets/icons/burger-open.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 21px 14px;
+  }
+
+  .main-nav__list {
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .main-nav__item {
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    text-align: left;
+    padding-left: 10px;
+    padding-top: 6px;
+    padding-bottom: 9px;
+    border: 2px solid $main-color;
+    border-radius: 50px;
+  }
+
+  .main-nav__link {
+    display: block;
+    color: $main-text-color;
+    padding-bottom: 0;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .main-nav__toggle {
+    &::before {
+      left: 16px;
+      top: 11px;
+    }
+  }
+}
+
+
 
 
