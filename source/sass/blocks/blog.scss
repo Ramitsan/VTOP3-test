@@ -69,3 +69,14 @@
   scrollbar-width: thin;
   scrollbar-color: $main-color rgba(255, 255, 255, .12);
 }
+
+@media (max-width: $small-desktop-width) {
+  .blog__wrapper {
+    padding-top: 75px;
+    padding-bottom: 85px;
+  }
+
+  .blog__news-container {
+    border-radius: 100px;
+  }
+}

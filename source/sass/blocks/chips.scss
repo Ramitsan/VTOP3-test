@@ -50,8 +50,10 @@
   }
 }
 
-@media (max-width: $tablet-width) {
+@media (max-width: $small-desktop-width) {
   .chips__wrapper {
+    height: auto;
+    padding-top: 60px;
     flex-direction: column-reverse;
   }
 

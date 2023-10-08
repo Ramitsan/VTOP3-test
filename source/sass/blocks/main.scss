@@ -1,7 +1,3 @@
-.main {
-  // height: 88vh;
-}
-
 .main__wrapper {
   width: 100%;
   max-width: 1640px;
@@ -24,12 +20,24 @@
   width: 32%;
 }
 
-@media (max-width: $tablet-width)  {
-  .main__wrapper  {
+@media (max-width: $small-desktop-width) {
+  .main__wrapper {
     flex-direction: column;
+  }
+
+  .main__promo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .main__chips {
     width: 100%;
+  }
+
+  .main__blog {
+    width: 65%;
   }
 }

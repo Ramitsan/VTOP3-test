@@ -67,7 +67,7 @@
   background-image: url('../../assets/icons/chip-world.svg');
 }
 
-@media (max-width: $tablet-width)  {
+@media (max-width: $small-desktop-width) {
   .chip--long {
     width: 220px;
     height: 99px;
