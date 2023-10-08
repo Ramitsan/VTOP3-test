@@ -49,3 +49,35 @@
     transform: translateY(calc(-100% / 3));
   }
 }
+
+@media (max-width: $tablet-width) {
+  .chips__wrapper {
+    flex-direction: column-reverse;
+  }
+
+  .chips__line {
+    display: flex;
+    flex-direction: row;
+  }
+
+  @keyframes chips-move-down {
+    0% {
+      transform: translateX(0);
+    }
+  
+    100% {
+      transform: translateX(calc(100% / 3));
+    }
+  }
+  
+  @keyframes chips-move-up {
+    0% {
+      transform: translateX(0);
+    }
+  
+    100% {
+      transform: translateX(calc(-100% / 3));
+    }
+  }
+
+}

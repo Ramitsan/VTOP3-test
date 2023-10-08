@@ -23,3 +23,13 @@
 .main__blog {
   width: 32%;
 }
+
+@media (max-width: $tablet-width)  {
+  .main__wrapper  {
+    flex-direction: column;
+  }
+
+  .main__chips {
+    width: 100%;
+  }
+}
