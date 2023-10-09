@@ -31,7 +31,7 @@
   border-radius: 35px;
 }
 
-@media (max-width: $small-desktop-width)  {
+@media (max-width: $small-desktop-width) {
   .promo__wrapper {
     padding: 30px;
     text-align: center;
@@ -46,3 +46,19 @@
   }
 }
 
+@media (max-width: $tablet-width) {
+  .promo__heading {
+    margin-top: 40px;
+    font-size: 72px;
+    line-height: 84px;
+  }
+
+  .promo__text {
+    font-size: 26px;
+  }
+
+  .promo__link {
+    padding: 20px 56px;
+    font-size: 18px;
+  }
+}

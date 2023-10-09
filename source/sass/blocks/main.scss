@@ -26,7 +26,12 @@
 }
 
 @media (max-width: $small-desktop-width) {
+  .main {
+    height: 100%;
+  }
+  
   .main__wrapper {
+    width: 100%;
     flex-direction: column;
   }
 
@@ -51,4 +56,9 @@
   .main__wrapper {
     padding-top: 75px;
   }  
+
+  .main__blog {
+    width: 100%;
+    margin-top: 0;
+  }
 }

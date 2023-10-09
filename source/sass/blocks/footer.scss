@@ -17,5 +17,12 @@
 @media (max-width: $small-desktop-width) {
   .footer__wrapper {
     width: 90%;
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: $mobile-width)  {
+  .footer__wrapper {
+    flex-direction: column;
   }
 }

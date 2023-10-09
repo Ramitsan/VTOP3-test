@@ -14,3 +14,20 @@
 .footer-nav__link {  
   @include nav-link();
 }
+
+@media (max-width: $small-desktop-width) {
+  .footer-nav__item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: $tablet-width)  {
+  .footer-nav {
+    flex-direction: column;
+  }
+
+  .footer-nav__item:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+}

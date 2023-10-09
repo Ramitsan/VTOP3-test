@@ -8,10 +8,20 @@
   border-radius: 75px;
 }
 
-.news-item__text {
-  margin: 0;
+.news-item--active {
+  background-color: $main-color;
+}
+
+.news-item__link {
+  display: inline-block;
   font-size: 24px;
   line-height: 28px;
+  font-weight: normal;
+  color: $main-text-color;
+}
+
+.news-item__text {
+  margin: 0;  
 }
 
 .news-item__date {
@@ -26,5 +36,16 @@
 @media (max-width: $small-desktop-width) {
   .news-item {
     width: 90%;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .news-item {
+    height: auto;
+  }
+
+  .news-item__link {   
+    font-size: 18px;
+    line-height: 20px;
   }
 }
