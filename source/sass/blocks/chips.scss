@@ -83,3 +83,14 @@
   }
 
 }
+
+@media (max-width: $mobile-width) {
+  .chips__wrapper {
+    padding-top: 26px;
+  }
+
+  .chips__line {
+    margin: 0 10px;
+  }
+}
+

@@ -105,6 +105,8 @@
 
   .header__wrapper {
     padding: 5px 10px;
+    margin: 10px auto;
+    border: 2px solid $main-color;
   }
 
   .header__logo {
@@ -170,10 +172,21 @@
 }
 
 @media (max-width: $mobile-width) {
+  .header__wrapper {
+    padding: 10px 16px 8px;
+  }
+
+  .header__logo {
+    width: 54px;
+  }
+
   .header__burger-toggle {
-    &::before {
-      left: 16px;
-      top: 11px;
-    }
+    top: 12px;
+    right: 19px;
+  }
+
+  .header__language-button {
+    right: 40px;
+    top: -2px;
   }
 }

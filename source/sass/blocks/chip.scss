@@ -92,4 +92,20 @@
     width: 150px;
     border: 2px solid $main-color;
   }
+  
+  .chip--crown.chip--long {
+    border: 2px solid white;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .chip {
+    width: 49px;
+    height: 49px;
+    margin: 5px;
+  }
+
+  .chip--long {
+    width: 109px;
+  }
 }
