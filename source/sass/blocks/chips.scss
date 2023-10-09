@@ -36,7 +36,7 @@
   }
 
   100% {
-    transform: translateY(calc(100% / 3));
+    transform: translateY(calc(100% / 4));
   }
 }
 
@@ -46,7 +46,7 @@
   }
 
   100% {
-    transform: translateY(calc(-100% / 3));
+    transform: translateY(calc(-100% / 4));
   }
 }
 
@@ -68,7 +68,7 @@
     }
   
     100% {
-      transform: translateX(calc(100% / 3));
+      transform: translateX(calc(100% / 4));
     }
   }
   
@@ -78,7 +78,7 @@
     }
   
     100% {
-      transform: translateX(calc(-100% / 3));
+      transform: translateX(calc(-100% / 4));
     }
   }
 
