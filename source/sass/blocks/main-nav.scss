@@ -59,7 +59,7 @@
     z-index: 1000;
   }
 
- #burger:checked ~ .nav {
+ #burger:checked ~ .header .nav {
     position: fixed;
     top: 74px;
     right: 0;
