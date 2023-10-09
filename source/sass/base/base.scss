@@ -9,6 +9,8 @@ html {
 }
 
 body {
+  height: 100vh;
+  min-height: 1000px;
   min-width: 320px;
   margin: 0;
   padding: 0;
@@ -21,8 +23,7 @@ body {
   font-weight: normal;
   color: $main-text-color;
   display: flex;
-  flex-direction: column;
-  min-height: 100%;
+  flex-direction: column; 
   position: relative;
 }
 
@@ -50,4 +51,11 @@ img {
   border: 1px solid transparent;
   vertical-align: middle;
   cursor: pointer;
+}
+
+@media (max-width: $small-desktop-width) {
+  body {
+    height: auto;
+    min-height: 100vh;
+  }
 }
