@@ -72,6 +72,8 @@
 
 @media (max-width: $small-desktop-width) {
   .blog__wrapper {
+    width: 85%;
+    margin: 0 auto;
     padding-top: 75px;
     padding-bottom: 85px;
   }
@@ -83,7 +85,7 @@
 
 @media (max-width: $tablet-width) {
   .blog__news-container {
-    width: 60%;
+    width: 100%;
   }
 
   .blog__heading {
@@ -92,13 +94,16 @@
   }
 
   .blog__news-list  {
+    width: 97%;
     margin-right: 0;
   }
 }
 
 @media (max-width: $mobile-width) {
   .blog__wrapper {
-   padding: 20px 10px;
+    width: 94%;
+    padding-top: 20px;
+    padding-bottom: 118px;
   }
 
   .blog__heading {
@@ -113,6 +118,7 @@
   }
 
   .blog__news-list  {
+    width: 99%;
     padding-top: 2px;
   }
 
@@ -124,7 +130,7 @@
   }
   
   .blog__news-list::-webkit-scrollbar-track {   
-    width: 4px;
+    width: 301px;
   }
   
   .blog__news-list::-webkit-scrollbar-thumb {

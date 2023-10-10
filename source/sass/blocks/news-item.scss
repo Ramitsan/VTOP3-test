@@ -52,6 +52,7 @@
 
 @media (max-width: $mobile-width) {
   .news-item {
+    margin-bottom: 4px;
     padding: 15px 25px;
     border-radius: 35px;
   }
@@ -62,6 +63,7 @@
   }
 
   .news-item__date {
+    margin-top: 5px;
     margin-bottom: 0;
   }
 }
