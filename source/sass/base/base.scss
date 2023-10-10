@@ -2,7 +2,6 @@
 *::before,
 *::after {
   box-sizing: inherit;
-  // border: 1px solid red;
 }
 
 html {
@@ -38,7 +37,6 @@ img {
 }
 
 .background {
-  background-color: $background-color;
   position: absolute; 
   width: 100%;
   height: 100%;
@@ -59,6 +57,20 @@ img {
     background-repeat: no-repeat;
     opacity: .3;
     transform: translateY(-50%) translateX(-50%) rotate(-45deg);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 800px;
+    height: 800px;
+    right: 10%;
+    bottom: 15%;
+    background-image: radial-gradient(ellipse at center, $main-color,transparent 70%);
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: .3;
+    transform: translateY(50%) translateX(50%);
   }
 }
 
@@ -109,6 +121,11 @@ img {
       height: 700px;  
       top: 230px;   
       left: 30%;
+    }
+    &::after {
+      width: 600px;
+      height: 600px;
+      bottom: 20%;
     }
   }
 }
