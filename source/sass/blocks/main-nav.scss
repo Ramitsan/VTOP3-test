@@ -105,3 +105,16 @@
     }
   }
 }
+
+@media (max-width: $tablet-width) {
+  .nav {
+    padding-top: 12px;
+    height: 560px;
+  }
+
+  .main-nav__item {
+    padding-left: 20px;
+    padding-top: 12px;
+    padding-bottom: 10px;
+  }
+}
