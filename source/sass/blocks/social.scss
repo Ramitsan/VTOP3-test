@@ -1,11 +1,11 @@
-.social-block {
+.social {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
 }
 
-.social-block__heading {
+.social__heading {
   font-size: 16px;
 
   font-weight: normal;
@@ -13,20 +13,20 @@
   margin-bottom: 0;
 }
 
-.social-list {
+.social__list {
   display: flex;
   padding-left: 0px;
 }
 
-.social-item {
+.social__item {
   list-style: none;
 }
 
-.social-item:not(:last-child) {
+.social__item:not(:last-child) {
   margin-right: 8px;
 }
 
-.social-link {
+.social__link {
   width: 32px;
   height: 32px;
   position: relative;
@@ -36,18 +36,18 @@
   cursor: pointer;
 }
 
-.social-link:hover .social-background--hover {
+.social__link:hover .social__background--hover {
   opacity: 100;
 }
 
-.social-background {
+.social__background {
   width: 100%;
   height: 100%;
   background-image: url('../../assets/icons/vector.svg');
   background-size: contain;
 }
 
-.social-background--hover {
+.social__background--hover {
   position: absolute;
   top: 0;
   left: 0;
@@ -56,7 +56,7 @@
   transition: 200ms;
 }
 
-.social-icon {
+.social__icon {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -64,53 +64,53 @@
   background-repeat: no-repeat;
 }
 
-.social-icon--twitter {
+.social__icon--twitter {
   background-image: url('../../assets/icons/icon-twitter.svg');
 }
 
-.social-icon--facebook {
+.social__icon--facebook {
   background-image: url('../../assets/icons/icon-facebook.svg');
 }
 
-.social-icon--instagram {
+.social__icon--instagram {
   background-image: url('../../assets/icons/icon-instagram.svg');
 }
 
-.social-icon--linkedin {
+.social__icon--linkedin {
   background-image: url('../../assets/icons/icon-linkedin.svg');
 }
 
-.social-icon--youtube {
+.social__icon--youtube {
   background-image: url('../../assets/icons/icon-youtube.svg');
 }
 
-.social-icon--tiktok {
+.social__icon--tiktok {
   background-image: url('../../assets/icons/icon-tiktok.svg');
 }
 
-.social-icon--telegram {
+.social__icon--telegram {
   background-image: url('../../assets/icons/icon-telegram.svg');
 }
 
-.social-icon--vk {
+.social__icon--vk {
   background-image: url('../../assets/icons/icon-vk.svg');
 }
 
 @media (max-width: $mobile-width) {
-  .social-block {
+  .social {
     align-items: flex-start;
   }
 
-  .social-block__heading {
+  .social__heading {
     margin-top: 4px;
     font-size: 14px;
   }
 
-  .social-list {
+  .social__list {
     margin-top: 9px;
   }
 
-  .social-link {
+  .social__link {
     width: 27px;
     height: 27px;
   }

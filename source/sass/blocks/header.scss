@@ -22,9 +22,9 @@
   height: 32px;
 }
 
-.header__checkbox {
-  display: none;
-}
+// .header__checkbox {
+//   display: none;
+// }
 
 .header__burger-toggle {
   display: none;
@@ -146,6 +146,18 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    position: fixed;
+    top: 68px;
+    right: -500px;
+    width: 100%;
+    height: 560px;
+    margin: 0px;
+    padding-left: 0;   
+    padding-top: 12px;   
+    background-color: #110A1D;    
+    transform: translateX(100%);
+    transition: all .7s ease-out;
+    z-index: 1000;
   }
 
   .header__language-button {
