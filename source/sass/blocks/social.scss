@@ -43,7 +43,7 @@
 .social__background {
   width: 100%;
   height: 100%;
-  background-image: url('../../assets/icons/vector.svg');
+  background-image: url('./../assets/icons/vector.svg');
   background-size: contain;
 }
 
@@ -51,7 +51,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  background-image: url('../../assets/icons/vector2.svg');
+  background-image: url('./../assets/icons/vector2.svg');
   opacity: 0;
   transition: 200ms;
 }
@@ -65,35 +65,35 @@
 }
 
 .social__icon--twitter {
-  background-image: url('../../assets/icons/icon-twitter.svg');
+  background-image: url('./../assets/icons/icon-twitter.svg');
 }
 
 .social__icon--facebook {
-  background-image: url('../../assets/icons/icon-facebook.svg');
+  background-image: url('./../assets/icons/icon-facebook.svg');
 }
 
 .social__icon--instagram {
-  background-image: url('../../assets/icons/icon-instagram.svg');
+  background-image: url('./../assets/icons/icon-instagram.svg');
 }
 
 .social__icon--linkedin {
-  background-image: url('../../assets/icons/icon-linkedin.svg');
+  background-image: url('./../assets/icons/icon-linkedin.svg');
 }
 
 .social__icon--youtube {
-  background-image: url('../../assets/icons/icon-youtube.svg');
+  background-image: url('./../assets/icons/icon-youtube.svg');
 }
 
 .social__icon--tiktok {
-  background-image: url('../../assets/icons/icon-tiktok.svg');
+  background-image: url('./../assets/icons/icon-tiktok.svg');
 }
 
 .social__icon--telegram {
-  background-image: url('../../assets/icons/icon-telegram.svg');
+  background-image: url('./../assets/icons/icon-telegram.svg');
 }
 
 .social__icon--vk {
-  background-image: url('../../assets/icons/icon-vk.svg');
+  background-image: url('./../assets/icons/icon-vk.svg');
 }
 
 @media (max-width: $mobile-width) {
